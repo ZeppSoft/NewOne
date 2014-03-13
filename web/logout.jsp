@@ -18,6 +18,7 @@
 <%
     DAOStarter.getDAO().setCurrentUser(new User("", ""));
     DAOStarter.getDAO().setCurrentOrder(new Order());
+    DAOStarter.getDAO().getSession().invalidate();
 %>
 Log out complete!
 <br/>

@@ -1,6 +1,8 @@
 package Utils;
 
 
+import javax.servlet.http.HttpSession;
+
 public interface CarShopDAO {
     public  boolean SaveUser(String login, String password);
     public  boolean ReadUser(String login, String password);
@@ -15,6 +17,8 @@ public interface CarShopDAO {
     public  void setCartOrder(Order cartOrder);
     public  User getCurrentUser();
     public  void setCurrentUser(User currentUser);
+    public  void setSession(HttpSession session);
+    public  HttpSession getSession();
 
 
 

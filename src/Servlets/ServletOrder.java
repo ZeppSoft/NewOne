@@ -15,7 +15,15 @@ public class ServletOrder extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         PrintWriter out = response.getWriter();
-        if (CarShopDAODerby.currentUser.getLogin().equals("")){
+     //   if (CarShopDAODerby.currentUser.getLogin().equals("")){
+        try {
+        String login= (String) DAOStarter.getDAO().getSession().getAttribute("login");
+        if (login==null){
+            out.print("Please login in system!");
+            return;
+        }
+        }
+        catch (java.lang.IllegalStateException e){
             out.print("Please login in system!");
             return;
         }

@@ -1,6 +1,7 @@
 package Utils;
 
 import javax.persistence.*;
+import javax.servlet.http.HttpSession;
 import java.util.List;
 
 public class CarShopDAODerby implements CarShopDAO{
@@ -9,10 +10,20 @@ public class CarShopDAODerby implements CarShopDAO{
     public static Order cartOrder = new Order();
     public static EntityManager em = null;
     public static String connection = "EclipseLink";
+    public static HttpSession session =null;
      static  {
         em = DerbySingleton.getEntity(connection);
 
     }
+
+    public  HttpSession getSession() {
+        return session;
+    }
+
+    public  void setSession(HttpSession session) {
+        CarShopDAODerby.session = session;
+    }
+
     public  Order getCurrentOrder() {
         return currentOrder;
     }
