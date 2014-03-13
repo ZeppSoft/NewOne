@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="javax">
+    <ANNOTATIONS>
+      <root url="file://F:/Maven/.m2/repository/javax" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://F:/Maven/.m2/repository/javax" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://F:/Maven/.m2/repository/javax" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://F:/Maven/.m2/repository/javax" />
+    </SOURCES>
+    <jarDirectory url="file://F:/Maven/.m2/repository/javax" recursive="false" />
+    <jarDirectory url="file://F:/Maven/.m2/repository/javax" recursive="false" type="SOURCES" />
+  </library>
+</component>
